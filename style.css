@@ -27,7 +27,9 @@
  }
  
  body {font-family: Andale Mono, monospace;}
- body {background-image: url("Background.jpg");}
+ body {background-image: url("Background.jpg")
+       background-repeat: no-repeat;
+      }
  body {margin:0;}
  ul {
   list-style-type: none;
