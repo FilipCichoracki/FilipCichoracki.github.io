@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="FAQ.html">FAQ</a></li>
+    <li><a class="active" href="motivation.html">Motivation</a></li>
+    <li><a href="viewonthejob.html">View On The Job</a></li>
+  </ul>
+ <h1 style="color:goldenrod;"">World of Filip Cichoracki</h1>
+</header>
+<body>
+  <button type="button" class="align-center collapsible">Open Collapsible</button>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</div>
+</html>
