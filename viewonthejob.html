@@ -15,7 +15,7 @@
 <body>
   <button type="button" class="align-center collapsible">Macaw, Your Surprise, Unisys, Microsoft, Altran</button>
   <div class="content">
-    <h3 class="align-center">Macaw, Your Surprise, Unisys, Microsoft en Altran
+    <h3 class="align-center">Macaw, Your Surprise, Unisys, Microsoft en Altran</h3>
     <p>Macaw - Houdt van uitdaging. Zakelijk inzicht en eersteklas technologie wordt gecombineerd om klanten tevreden te houden. In de IT richt Macaw zich op full-service digital partnering.</p>
     <p>Your Surprise - Altijd in beweging en wilt de klant altijd verassen met iets moois en nieuws. Ook moet de verwachting van de klant worden overtroffen. In de IT richt Your Surprise zich op het optimaliseren van hun website en het werkend maken van hun editor.</p>
     <p>Unisys - Hoogwaardige en security-gerichte oplossingen voor de meest veeleisende bedrijven en overheden. In de IT richt Unisys zich op het verbeteren van de veilige op het internet en van bedrijven. </p>
@@ -38,6 +38,22 @@
     <p>Microsoft – Officiële startpagina. (2020). Microsoft.com. https://www.microsoft.com/nl-nl</p>
     <p>Discover Altran : World leader in engineering solutions and R&D. (2018, 28 augustus). Altran Netherlands. https://www.altran.com/nl/en/</p>
   </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </body>
 </div>
 </html>
