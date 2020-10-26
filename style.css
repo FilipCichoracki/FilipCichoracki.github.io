@@ -63,7 +63,7 @@ td, th {
     font-size: 15px;
   }
   
-  .turnon, .collapsible:hover {
+  .turn, .collapsible:hover {
     background-color: #555;
   }
   
@@ -71,7 +71,7 @@ td, th {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: black;
   }
 
  li {float: left;}
